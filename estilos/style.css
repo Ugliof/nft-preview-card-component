@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Bluetext: hsl(215, 51%, 70%);
+    --CyanETH: hsl(178, 100%, 50%);
+
+    --Bluemain: hsl(217, 54%, 11%);
+    --BluecardBG: hsl(216, 50%, 16%);
+    --Blueline: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --font-family: "Outfit", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--Bluemain);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--BluecardBG);
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 375px;
+    border-radius: 15px;
+    box-shadow: 0px 22px 0px 12px hsla(215, 54%, 7%, 0.445), 0px 20px 0px 40px hsla(214, 51%, 8%, 0.205);
+    
+}
+
+.equi {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.2rem;
+}
+
+.card h1 {
+    color: var(--White);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.descricao {
+    color: var(--Bluetext);
+    font-size: 1.2rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Blueline);
+}
+
+.eth, .days {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 6px;
+
+    margin-bottom: 1.5rem;
+}
+
+.eth img {
+    width: 12px;
+    height: 20px;
+}
+
+.days img {
+    width: 19px;
+    height: 19px;
+}
+
+.eth span {
+    color: var(--CyanETH);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.days span {
+    color: var(--Bluetext);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.creator img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+
+
+.creator p {
+    color: var(--Bluetext);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.creator span {
+    color: var(--White);
+}
+
+.avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
