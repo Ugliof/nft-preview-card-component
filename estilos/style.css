@@ -22,7 +22,7 @@
 body {
     font-family: var(--font-family);
     background-color: var(--Bluemain);
-    min-height: 100vh;
+    height: 100vh;
 
     display: flex;
     justify-content: center;
